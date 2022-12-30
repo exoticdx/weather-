@@ -21,7 +21,7 @@ let Time = document.getElementById("Time")
 let city = prompt("enter city name ")
  let weather = async()=> {
     let data =0;
-    let p = fetch("https://api.weatherapi.com/v1/current.json?key=&q="+city+"&aqi=no")
+    let p = fetch("http://api.weatherapi.com/v1/current.json?key=c084a608b078485f9f3105635222912&q="+city+"&aqi=no")
     let x = p.then((response)=>{
     console.log(response.status)
     console.log(response.ok)
